@@ -1,0 +1,23 @@
+:root {
+  /* --main-color: #000000; */
+  --hard-gray-color: #313131;
+  --ligth-gray-color: #E1E1E1;
+  --soft-blue-color: #1B70D1;
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: 'Nanum Gotic', sans-serif;
+  font-size: 1.8rem;
+}
