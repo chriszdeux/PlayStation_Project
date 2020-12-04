@@ -1,21 +1,20 @@
 import React from 'react'
 
-import menu from './images/icons/menu.svg';
-import search from './images/icons/search.svg'
 import psLogo from './images/icons/playstation-logo.svg'
 
-import './global-style.css';
-import './styles/PlayStation.css';
+import './icons/font/icons.css';
+import './styles/global-style.css'
+import './styles/menu-style/PlayStation.css';
 export const PlayStation = () => {
   return (
     <header>
       <nav className="mobile__menu">
         <div className="mobile__icons">
-          <img src={ menu } alt="" />
-          <img src={ search } alt="" />
+          <span className="flaticon-menu-2"></span>
+          <span className="flaticon-search"></span>
+          
         </div>
         <img className="playstation--logo" src={ psLogo } alt="" />
-        
         <button className="sign--in" >Sign In</button>
         
       </nav>

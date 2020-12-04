@@ -1,6 +1,4 @@
-/* header {
-  display: flex;
-} */
+@import '../global-variables.css';
 
 .mobile__menu{
   display: flex;
@@ -8,6 +6,10 @@
   align-items: center;
   width: 100%;
   padding: 10px;
+}
+
+.mobile__icons {
+  justify-self: start;
 }
 .mobile__icons img {
   width: 25px;
@@ -17,6 +19,7 @@
 .playstation--logo {
   width: 50px;
   align-self: center;
+  /* justify-self: center; */
 }
 
 .sign--in {
