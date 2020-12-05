@@ -10,6 +10,11 @@ html {
 }
 
 body {
-  font-family: 'Nanum Gotic', sans-serif;
+  font-family: var(--main-font);
   font-size: 1.8rem;
+  background-color: var(--main-background-color);
+}
+
+ul, li, ol {
+  list-style: none;
 }

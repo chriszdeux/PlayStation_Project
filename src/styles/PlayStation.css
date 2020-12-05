@@ -1,0 +1,152 @@
+@import './global-variables.css';
+
+.mobile__menu{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  box-shadow: 0 1px 5px 3px var(--ligth-gray-color);
+}
+
+.mobile__icons {
+  justify-self: end;
+}
+.mobile__icons span {
+  width: 25px;
+  margin-right: 10px;
+}
+
+.playstation--logo {
+  width: 50px;
+  align-self: center;
+  /* justify-self: center; */
+}
+
+.sign--in {
+  width: 80px;
+  height: 25px;
+  /* padding: 10px; */
+  border-radius: 50px;
+  border: none;
+  color: var(--ligth-gray-color);
+  background-color: var(--hard-gray-color);
+}
+
+/* .menu__icons:hover .menu__mobile {
+  visibility: visible;
+} */
+
+
+
+/*******************************|
+\       MODAL 1
+/*******************************/
+
+
+.main__menu__container {
+  /* border: 1px solid red; */
+}
+.menu__mobile {
+  /* visibility: visible; */
+  /* position: absolute; */
+  position: relative;
+  z-index: 1;
+}
+
+.menu--item--list {
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  /* border: 1px solid red; */
+}
+
+.menu--item--list img {
+  width: 45px;
+  opacity: 0.7;
+  margin: 10px 20px;
+  padding: 10px;
+  
+}
+
+.menu--item--list p {
+  font-size: 2rem;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.menu__list:hover {
+  /* border: 1px solid var(--soft-blue-color); */
+  background-color: var(--ligth-blue-color);
+  color: var(--soft-blue-color);
+  font-size: bold;
+  
+  /* box-shadow: 0 0 4px var(--soft-blue-color); */
+  /* opacity: 1; */
+}
+
+/* .menu--item--list :hover {
+  border: 1px solid var(--soft-blue-color);
+  box-shadow: 0 0 4px var(--soft-blue-color);
+  /* opacity: 1; */
+
+
+
+
+
+/*******************************|
+\       MODAL 2
+/*******************************/
+
+.menu__container {
+  /* visibility: hidden; */
+  background: white;
+  width: 80%;
+  height: 100vh;
+  position: absolute;
+  top: 80px;
+  right: 0;
+  /* border: 1px solid red; */
+  z-index: 2;
+  padding: 20px;
+  box-shadow: -5px 0 10px var(--ligth-gray-color);
+}
+
+.menu--close--content {
+  display: flex;
+  width: 100%;
+  border: 1px solid red;
+}
+
+.menu--close--content p {
+}
+
+.menu__content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-evenly;
+  gap: 10px;
+  margin-top: 20px
+}
+
+/* .menu__container p {
+  display: inline;
+  padding: 10px;
+  margin-bottom: 30px;
+} */
+
+.menu--list--content {
+  text-align: center;
+  font-size: bold;
+  border-bottom: 1px solid var(--ligth-blue-color);
+  /* margin: 15px; */
+  /* border: 1px solid red; */
+}
+.menu--list--content img {
+  width: 50px;
+}
+.menu--list--content p {
+  font-family: var(--main-font);
+  font-weight: bold;
+  text-transform: capitalize;
+  
+}

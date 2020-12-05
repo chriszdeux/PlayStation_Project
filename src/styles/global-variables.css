@@ -1,6 +1,12 @@
 :root {
   /* --main-color: #000000; */
   --hard-gray-color: #313131;
-  --ligth-gray-color: #E1E1E1;
-  --soft-blue-color: #1B70D1;
+  --ligth-gray-color: #bdbdbd;
+  --soft-blue-color: #104a8d;
+  /* --soft-blue-color: #1B70D1; */
+  --ligth-blue-color: #91c4ff34;
+  --main-background-color: #fdfdfd;
+
+  --main-font: 'Hind Siliguri';
+  --second-font: 'Nanum Gothic';
 }
