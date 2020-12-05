@@ -1,5 +1,6 @@
 @import './global-variables.css';
 
+
 .mobile__menu{
   display: flex;
   justify-content: space-between;
@@ -33,11 +34,19 @@
   background-color: var(--hard-gray-color);
 }
 
+.close--button {
+  /* width: 25px;
+  margin-right: 10px; */
+  font-size: 3rem;
+  margin-left: 30px;
+}
 /* .menu__icons:hover .menu__mobile {
   visibility: visible;
 } */
 
-
+.ReactModal__Overlay .ReactModal__Overlay--after-open {
+  background-color: rgba(255, 255, 255, 1);
+}
 
 /*******************************|
 \       MODAL 1
@@ -46,6 +55,10 @@
 
 .main__menu__container {
   /* border: 1px solid red; */
+  /* display: absolute;
+  top: 100px; */
+  margin-top: 20px;
+  outline: none;
 }
 .menu__mobile {
   /* visibility: visible; */
@@ -74,7 +87,7 @@
   font-weight: 500;
   text-transform: capitalize;
 }
-.menu__list:hover {
+.menu__list li:hover {
   /* border: 1px solid var(--soft-blue-color); */
   background-color: var(--ligth-blue-color);
   color: var(--soft-blue-color);
