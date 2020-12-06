@@ -9,27 +9,36 @@ import {MainModalMenu} from './components/menu/MainModalMenu';
 export const PlayStation = () => {
 
 
-  const [iconMenu, setIconMenu] = useState( 'flaticon-menu-2' )
+  // const menuButton = 'flaticon-menu-2';
+  // const closeButton = 'flaticon-multiply';
+  
+  const [iconMenu, setIconMenu] = useState( false )
 
   const toggle = () => {
-    iconMenu ? setIconMenu('flaticon-menu-2') : setIconMenu('flaticon-multiplay')
+    iconMenu ? setIconMenu(false) : setIconMenu( true );
   }
+
   return (
     <header>
       <nav className="mobile__menu">
         <div className="mobile__icons">
-        <span className={ iconMenu } onClick={ toggle }></span>
           {
             
+            (!iconMenu)
+              ? <span className="flaticon-menu-2" onClick={ toggle }></span>
+              : <span className="flaticon-multiply blue--outline" onClick={ toggle }></span>
+              
           }
-          {/* <span className="flaticon-menu-2" onClick={() => setOpenMenu( true ) }></span> */}
+          
           <span className="flaticon-search"></span>          
         </div>
         <img className="playstation--logo" src={ psLogo } alt="" />
         <button className="sign--in" >Sign In</button>
         
       </nav>
-      
+      {
+        iconMenu && <MainModalMenu />
+      }
       
 
       {/* <Modal isOpen={ openMenu } className="menu__mobile">
