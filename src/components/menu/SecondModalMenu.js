@@ -4,7 +4,7 @@ import React from 'react';
 
 
 
-export const SecondModalMenu = (  value) => {
+export const SecondModalMenu = (  value ) => {
   // const { id, icon, name } = content;
   // console.log(id, icon, name)
   // const { content } = value

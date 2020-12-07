@@ -1,22 +1,19 @@
-import React, { useState } from 'react'
-import Modal from 'react-modal';
+import React from 'react';
+
+import { useShow } from './util/hooks/useShow';
+import {MainModalMenu} from './components/menu/MainModalMenu';
+
 import psLogo from './images/icons/playstation-logo.svg'
 
 import './icons/font/icons.css';
 import './styles/global-style.css'
 import './styles/PlayStation.css';
-import {MainModalMenu} from './components/menu/MainModalMenu';
+
+
 export const PlayStation = () => {
 
 
-  // const menuButton = 'flaticon-menu-2';
-  // const closeButton = 'flaticon-multiply';
-  
-  const [iconMenu, setIconMenu] = useState( false )
-
-  const toggle = () => {
-    iconMenu ? setIconMenu(false) : setIconMenu( true );
-  }
+  const { showContent, toggleContent } = useShow( )
 
   return (
     <header>
@@ -24,9 +21,9 @@ export const PlayStation = () => {
         <div className="mobile__icons">
           {
             
-            (!iconMenu)
-              ? <span className="flaticon-menu-2" onClick={ toggle }></span>
-              : <span className="flaticon-multiply blue--outline" onClick={ toggle }></span>
+            (!showContent)
+              ? <span className="flaticon-menu-2" onClick={ toggleContent }></span>
+              : <span className="flaticon-multiply blue--outline" onClick={ toggleContent }></span>
               
           }
           
@@ -37,17 +34,8 @@ export const PlayStation = () => {
         
       </nav>
       {
-        iconMenu && <MainModalMenu />
+        showContent && <MainModalMenu />
       }
-      
-
-      {/* <Modal isOpen={ openMenu } className="menu__mobile">
-        <span className=" .ReactModal__Overlay .ReactModal__Overlay--after-open flaticon-menu-2 close--button " onClick={() => {
-          setOpenMenu(false)
-        }}></span>
-        < MainModalMenu />
-
-      </Modal> */}
     </header>
   )
 }
