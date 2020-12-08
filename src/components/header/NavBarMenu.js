@@ -1,19 +1,19 @@
-import React from 'react';
-
-import { useShow } from './util/hooks/useShow';
-import {MainModalMenu} from './components/menu/MainModalMenu';
-
-import psLogo from './images/icons/playstation-logo.svg'
-
-import './icons/font/icons.css';
-import './styles/global-style.css'
-import './styles/PlayStation.css';
+import React from 'react'
 
 
-export const PlayStation = () => {
+import {MainModalMenu} from './MainModalMenu';
+import { useShow } from '../../util/hooks/useShow';
+
+import psLogo from '../../images/icons/playstation-logo.svg'
+
+import '../../icons/font/icons.css';
+import '../../styles/global-style.css'
+import '../../styles/header-style.css';
+
+export const NavBarMenu = () => {
 
 
-  const { showContent, toggleContent } = useShow( )
+  const { showContent, toggleContent } = useShow()
 
   return (
     <header>

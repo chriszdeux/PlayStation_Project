@@ -1,13 +1,21 @@
 @import './global-variables.css';
 
 
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
 .mobile__menu{
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  padding: 10px;
-  box-shadow: 0 1px 5px 3px var(--ligth-gray-color);
+  padding: 4px 5px;
+  background-color: white;
+  /* box-shadow: 0 1px 5px 3px var(--ligth-gray-color); */
+  /* z-index: 1000000; */
 }
 
 .mobile__icons {
@@ -15,7 +23,8 @@
 }
 .mobile__icons span {
   width: 25px;
-  margin: 10px;
+  transition: 0.4s;
+  /* margin: 10px; */
 }
 .mobile__icons .blue--outline{
   /* padding: 10px; */
@@ -24,7 +33,7 @@
     /* border: 1px solid red; */
 }
 .playstation--logo {
-  width: 50px;
+  width: 40px;
   align-self: center;
   /* justify-self: center; */
 }
@@ -62,8 +71,15 @@
   /* border: 1px solid red; */
   /* display: absolute;
   top: 100px; */
-  margin-top: 20px;
+  padding-top: 20px;
   outline: none;
+  height: 100vh;
+  background-color: white;
+  overflow: hidden;
+}
+
+.main__menu__container::-webkit-scrollbar {
+  display: none;
 }
 .menu__mobile {
   /* visibility: visible; */
@@ -83,14 +99,15 @@
 .menu--item--list img {
   width: 45px;
   opacity: 0.7;
-  margin: 10px 20px;
+  margin: 2px 20px;
   padding: 10px;
   
 }
 
 .menu--item--list p {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 1.6rem;
+  font-weight: 700;
+  font-weight: 700;
   text-transform: capitalize;
 }
 .menu__list li:hover {

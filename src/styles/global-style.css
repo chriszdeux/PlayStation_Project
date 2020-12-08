@@ -18,3 +18,15 @@ body {
 ul, li, ol {
   list-style: none;
 }
+
+.buy--btn {
+  border: none;
+  width: 150px;
+  height: 35px;
+  margin: 10px;
+  background-color: var(--soft-gray-color);
+  font-family: var(--second-font);
+  font-size: 1.6rem;
+  font-weight: 600;
+  color: white;
+}

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 
 import { menuDB } from '../../database/menu-database.js/menu-items';
 import { useShow } from '../../util/hooks/useShow';

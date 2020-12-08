@@ -1,9 +1,5 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { MainModalMenu } from './components/menu/MainModalMenu';
-import { PlayStation } from './PlayStation';
+import { PlayStationPage } from './PlayStationPage';
 
-ReactDOM.render(
-
-<PlayStation />, 
-document.querySelector('#root'));  
+ReactDOM.render(<PlayStationPage />, document.querySelector('#root'));  
